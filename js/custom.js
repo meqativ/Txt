@@ -59,7 +59,7 @@ function parseAndShowDocument(data, url, raw) {
 $(document).ready(function() {
     var loc = getParameterByName('txt')
     var raw = getParameterByName('raw')
-    var url = "https://cdn.discordapp.com/attachments/"+loc+".txt";
+    var url = "https://cdn.discordapp.com/attachments/"+loc;
     if(loc) {
         $.ajax({
             url: cors_url + url ,
